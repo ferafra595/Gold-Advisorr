@@ -128,14 +128,6 @@ a{color:inherit}
   box-shadow: var(--shadow);
 }
 
-/* ✅ SOSTITUISCI QUESTA */
-.card--glass{
-  background: linear-gradient(180deg, rgba(270,270,270,.09), rgba(270,270,270,.03));
-  border: 1px solid rgba(255,255,255,.16);
-  box-shadow: 0 24px 80px rgba(0,0,0,.55);
-  backdrop-filter: blur(12px);
-}
-
 /* (opzionale ma consigliato) aumenta leggibilità testi nella card */
 .card__kicker{
   font-size: 12px;
@@ -310,34 +302,7 @@ a{color:inherit}
   .sticky{display:flex}
   body{padding-bottom:72px;}
 }
-/* === FORCE OVERRIDE (deve stare in fondo al file) === */
-.hero__card .card--glass{
-  background: linear-gradient(180deg, rgba(270,270,270,.10), rgba(270,270,270,.03)) !important;
-  border: 1px solid rgba(255,255,255,.18) !important;
-  box-shadow: 0 28px 90px rgba(0,0,0,.60) !important;
-  backdrop-filter: blur(14px) !important;
-}
 
-.hero__card .card__kicker{ color: rgba(255,255,255,.78) !important; }
-.hero__card .card__text{ color: rgba(255,255,255,.75) !important; }
-}
-
-/* === HARD OVERRIDE FORM CARD === */
-.card.card--glass{
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.14),
-    rgba(255,255,255,.05)
-  ) !important;
-
-  border: 1px solid rgba(255,255,255,.22) !important;
-
-  box-shadow:
-    0 30px 90px rgba(0,0,0,.65),
-    inset 0 1px 0 rgba(255,255,255,.10) !important;
-
-  backdrop-filter: blur(16px) !important;
-}
 /* =========================================================
    PREMIUM FORM CARD (incolla in fondo a style.css)
    Obiettivo: più luce, più contrasto, più luxury
