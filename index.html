@@ -1,70 +1,435 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gold Advisor | Consulenza Oro Fisico a Lugano</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Advisor | Consulenza per Oro Fisico a Lugano</title>
+  <meta name="description" content="Consulenza riservata a Lugano per l’acquisto di oro fisico: lingotti certificati, supporto su misura, percorso chiaro e discreto." />
+  <link rel="stylesheet" href="style.css" />
 
-<header class="hero">
-  <div class="container">
-    <h1>Proteggi il tuo patrimonio con oro fisico</h1>
-    <p>Consulenza riservata e personalizzata a Lugano</p>
-    <div class="cta-buttons">
-      <a href="#form" class="btn primary">Richiedi consulenza</a>
-      <a href="https://wa.me/41000000000" class="btn secondary">WhatsApp</a>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon (opzionale) -->
+  <!-- <link rel="icon" href="assets/logo.png" /> -->
+
+  <!-- Meta Pixel (inserire qui quando pronto) -->
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">📍 Lugano, Ticino</span>
+        <span class="muted">Consulenza riservata per oro fisico</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="tel:+41000000000">📞 +41 00 000 00 00</a>
+        <a class="toplink" href="https://wa.me/41000000000" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
     </div>
   </div>
-</header>
 
-<section class="benefits">
-  <div class="container">
-    <h2>Perché scegliere l’oro fisico</h2>
-    <ul>
-      <li>Asset reale e tangibile</li>
-      <li>Protezione da inflazione e instabilità</li>
-      <li>Riconosciuto a livello globale</li>
-    </ul>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <!-- Se hai il logo, mettilo qui -->
+        <!-- <img src="assets/logo.png" alt="Gold Advisor" class="brand__logo"> -->
+        <div class="brand__text">
+          <div class="brand__name">Gold Advisor</div>
+          <div class="brand__tag">Consulenza oro fisico • Lugano</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#oro">Oro fisico</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#testimonianze">Testimonianze</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contatti" class="nav__cta">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="h1">Proteggi e diversifica il tuo patrimonio con <span class="gold">oro fisico</span></h1>
+        <p class="lead">
+          Consulenza riservata a Lugano per l’acquisto di lingotti certificati.
+          Percorso chiaro, discreto, su misura.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--gold" href="#contatti">Richiedi consulenza</a>
+          <a class="btn btn--dark" href="https://wa.me/41000000000" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust__item">✔ Oro fisico certificato</div>
+          <div class="trust__item">✔ Consulenza su misura</div>
+          <div class="trust__item">✔ Approccio riservato</div>
+        </div>
+
+        <p class="micro">
+          Nessuna promessa di rendimento. Informazioni chiare per decidere con lucidità.
+        </p>
+      </div>
+
+      <div class="hero__card">
+        <div class="card card--glass">
+          <div class="card__kicker">Richiesta rapida</div>
+          <div class="card__title">Parla con un consulente</div>
+          <p class="card__text">Lascia i dati: ti ricontattiamo in modo riservato.</p>
+
+          <form class="form" action="#" method="post">
+            <label>
+              <span>Nome e Cognome</span>
+              <input type="text" name="nome" placeholder="Mario Rossi" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="nome@email.com" required>
+            </label>
+
+            <label>
+              <span>Telefono</span>
+              <input type="tel" name="telefono" placeholder="+41..." required>
+            </label>
+
+            <label>
+              <span>Capitale indicativo</span>
+              <select name="capitale" required>
+                <option value="">Seleziona…</option>
+                <option>10.000 – 25.000</option>
+                <option>25.000 – 50.000</option>
+                <option>50.000 – 100.000</option>
+                <option>Oltre 100.000</option>
+              </select>
+            </label>
+
+            <button type="submit" class="btn btn--gold btn--full">Invia richiesta</button>
+            <p class="form__note">Risposta rapida. I tuoi dati restano riservati.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione: Oro fisico -->
+  <section class="section" id="oro">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Oro fisico: cosa stai acquistando davvero</h2>
+        <p class="sub">
+          Parliamo di un bene reale, non di un “prodotto finanziario”. Per questo servono chiarezza e processo.
+        </p>
+      </div>
+
+      <div class="grid3">
+        <div class="feature">
+          <div class="feature__title">Asset reale e tangibile</div>
+          <div class="feature__text">L’oro fisico è un bene materiale, riconosciuto e scambiabile a livello globale.</div>
+        </div>
+        <div class="feature">
+          <div class="feature__title">Lingotti certificati</div>
+          <div class="feature__text">Supporto nella scelta di tagli e caratteristiche con documentazione e tracciabilità.</div>
+        </div>
+        <div class="feature">
+          <div class="feature__title">Diversificazione</div>
+          <div class="feature__text">L’oro è spesso usato per bilanciare l’esposizione del patrimonio a scenari incerti.</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout__text">
+          <strong>Vuoi capire se l’oro è adatto al tuo caso?</strong>
+          In 10 minuti ti diciamo cosa ha senso e cosa no, senza giri.
+        </div>
+        <a class="btn btn--dark" href="#contatti">Parla con noi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione: Tagli / Soluzioni -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Tagli e soluzioni</h2>
+        <p class="sub">La scelta dipende da obiettivi, liquidità, orizzonte e preferenze operative.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card card--soft">
+          <div class="card__title">Tagli flessibili</div>
+          <p class="card__text">Soluzioni più “spezzate” per maggiore flessibilità operativa.</p>
+          <div class="badge">Consigliato per diversificazione</div>
+        </div>
+
+        <div class="card card--soft">
+          <div class="card__title">Tagli intermedi</div>
+          <p class="card__text">Equilibrio tra gestione e valore unitario, spesso scelto da investitori privati.</p>
+          <div class="badge">Bilanciato</div>
+        </div>
+
+        <div class="card card--soft">
+          <div class="card__title">Tagli elevati</div>
+          <p class="card__text">Per chi punta a concentrare valore in pochi pezzi, con logiche patrimoniali precise.</p>
+          <div class="badge">Per capitali importanti</div>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        Nota: non indichiamo prezzi o rendimenti in pagina. Le soluzioni vengono discusse in consulenza, in modo trasparente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sezione: Come funziona -->
+  <section class="section" id="come-funziona">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Come funziona la consulenza</h2>
+        <p class="sub">Un percorso semplice, senza confusione. Tu decidi, noi ti guidiamo.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__n">1</div>
+          <div>
+            <div class="step__t">Analisi obiettivi</div>
+            <div class="step__d">Capire cosa vuoi ottenere: protezione, diversificazione, pianificazione.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__n">2</div>
+          <div>
+            <div class="step__t">Scelta soluzione</div>
+            <div class="step__d">Tagli, logiche operative, modalità e vincoli: tutto spiegato in modo chiaro.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__n">3</div>
+          <div>
+            <div class="step__t">Acquisto e documentazione</div>
+            <div class="step__d">Supporto nel processo e nella corretta documentazione dell’operazione.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__n">4</div>
+          <div>
+            <div class="step__t">Follow-up</div>
+            <div class="step__d">Rimaniamo un punto di riferimento per dubbi e ottimizzazioni future.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chi siamo -->
+  <section class="section section--alt" id="chi-siamo">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Chi siamo</h2>
+        <p class="sub">Gold Advisor nasce per offrire consulenza concreta sull’oro fisico: pochi fronzoli, molte certezze.</p>
+      </div>
+
+      <div class="split">
+        <div class="split__left">
+          <div class="panel">
+            <h3 class="h3">Approccio</h3>
+            <ul class="list">
+              <li><strong>Riservatezza:</strong> comunicazione discreta e gestione ordinata del processo.</li>
+              <li><strong>Chiarezza:</strong> niente “slogan”, solo informazioni utili per decidere.</li>
+              <li><strong>Su misura:</strong> ogni soluzione dipende da obiettivi e contesto personale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="split__right">
+          <div class="panel">
+            <h3 class="h3">Per chi è</h3>
+            <ul class="list">
+              <li>Investitori privati che vogliono <strong>diversificare</strong> in modo concreto.</li>
+              <li>Imprenditori che cercano <strong>protezione</strong> in scenari incerti.</li>
+              <li>Chi vuole un supporto serio per scegliere <strong>lingotti</strong> e tagli.</li>
+            </ul>
+            <div class="panel__cta">
+              <a class="btn btn--gold" href="#contatti">Richiedi una consulenza</a>
+              <a class="btn btn--dark" href="tel:+41000000000">Chiama ora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonianze -->
+  <section class="section" id="testimonianze">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Testimonianze</h2>
+        <p class="sub">Esempi reali (nomi omessi per riservatezza).</p>
+      </div>
+
+      <div class="grid3">
+        <div class="quote">
+          <p>“Consulenza chiara e pragmatica. Finalmente qualcuno che spiega pro e contro senza vendere fumo.”</p>
+          <div class="quote__meta">Cliente privato • Lugano</div>
+        </div>
+        <div class="quote">
+          <p>“Mi hanno aiutato a scegliere tagli più adatti alle mie esigenze operative. Processo lineare.”</p>
+          <div class="quote__meta">Imprenditore • Ticino</div>
+        </div>
+        <div class="quote">
+          <p>“Approccio molto discreto. Ho apprezzato la trasparenza sulle scelte e i passaggi.”</p>
+          <div class="quote__meta">Cliente privato • Svizzera</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">FAQ</h2>
+        <p class="sub">Le domande più comuni prima di acquistare oro fisico.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Che differenza c’è tra oro fisico e strumenti finanziari legati all’oro?</summary>
+          <p>Con l’oro fisico acquisti un bene reale. Gli strumenti finanziari (ETF/derivati) seguono logiche diverse e introducono intermediari e rischi differenti.</p>
+        </details>
+        <details>
+          <summary>Quali tagli conviene scegliere?</summary>
+          <p>Dipende da obiettivi e flessibilità desiderata. In consulenza definiamo tagli coerenti con capitale e necessità operative.</p>
+        </details>
+        <details>
+          <summary>Come funziona la consulenza?</summary>
+          <p>Analisi obiettivi → proposta su misura → supporto nel processo → follow-up. Sempre con linguaggio chiaro e senza promesse.</p>
+        </details>
+        <details>
+          <summary>In quanto tempo mi ricontattate?</summary>
+          <p>Normalmente entro 24 ore lavorative. Se preferisci, puoi anche contattarci subito via WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti + Mappa -->
+  <section class="section" id="contatti">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="h2">Contatti</h2>
+        <p class="sub">Compila il modulo oppure contattaci direttamente. Riservatezza prima di tutto.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__left">
+          <div class="panel">
+            <h3 class="h3">Richiedi informazioni</h3>
+
+            <form class="form" action="#" method="post">
+              <label>
+                <span>Nome e Cognome</span>
+                <input type="text" name="nome" required>
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required>
+              </label>
+
+              <label>
+                <span>Telefono</span>
+                <input type="tel" name="telefono" required>
+              </label>
+
+              <label>
+                <span>Capitale indicativo</span>
+                <select name="capitale" required>
+                  <option value="">Seleziona…</option>
+                  <option>10.000 – 25.000</option>
+                  <option>25.000 – 50.000</option>
+                  <option>50.000 – 100.000</option>
+                  <option>Oltre 100.000</option>
+                </select>
+              </label>
+
+              <button type="submit" class="btn btn--gold btn--full">Invia richiesta</button>
+
+              <div class="contact__quick">
+                <a class="btn btn--dark btn--full" href="https://wa.me/41000000000" target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+                <a class="btn btn--ghost btn--full" href="tel:+41000000000">Chiama ora</a>
+              </div>
+
+              <p class="form__note">
+                Compilando il modulo accetti di essere ricontattato da Gold Advisor.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact__right">
+          <div class="panel">
+            <h3 class="h3">Dove siamo</h3>
+            <p class="muted">Lugano, Ticino (Svizzera). Ricevimento su appuntamento.</p>
+
+            <div class="map">
+              <!-- Sostituisci con l’indirizzo reale (o usa un pin generico su Lugano) -->
+              <iframe
+                title="Mappa Lugano"
+                src="https://www.google.com/maps?q=Lugano%20Svizzera&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="contact__details">
+              <div><strong>Telefono:</strong> <a href="tel:+41000000000">+41 00 000 00 00</a></div>
+              <div><strong>WhatsApp:</strong> <a href="https://wa.me/41000000000" target="_blank" rel="noopener">Apri chat</a></div>
+              <div><strong>Email:</strong> <a href="mailto:info@goldadvisor.ch">info@goldadvisor.ch</a></div>
+            </div>
+
+            <p class="disclaimer">
+              Disclaimer: le informazioni hanno finalità informativa e non costituiscono consulenza finanziaria o promessa di rendimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> Gold Advisor — Lugano, Svizzera</div>
+      <div class="footer__links">
+        <a href="#contatti">Contatti</a>
+        <a href="#faq">FAQ</a>
+        <a href="#chi-siamo">Chi siamo</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="sticky">
+    <a class="sticky__btn sticky__btn--gold" href="#contatti">Consulenza</a>
+    <a class="sticky__btn sticky__btn--dark" href="https://wa.me/41000000000" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sticky__btn sticky__btn--ghost" href="tel:+41000000000">Chiama</a>
   </div>
-</section>
 
-<section class="about">
-  <div class="container">
-    <h2>Gold Advisor</h2>
-    <p>
-      Gold Advisor è una società di consulenza con sede a Lugano specializzata
-      nell’accompagnare clienti privati nella scelta di soluzioni in oro fisico.
-      Offriamo un servizio discreto, professionale e su misura.
-    </p>
-  </div>
-</section>
-
-<section class="form-section" id="form">
-  <div class="container">
-    <h2>Richiedi informazioni</h2>
-    <form action="#" method="post">
-      <input type="text" name="nome" placeholder="Nome e Cognome" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="telefono" placeholder="Telefono" required>
-      <select name="capitale" required>
-        <option value="">Capitale indicativo</option>
-        <option>10.000 – 25.000 €</option>
-        <option>25.000 – 50.000 €</option>
-        <option>50.000 – 100.000 €</option>
-        <option>Oltre 100.000 €</option>
-      </select>
-      <button type="submit" class="btn primary">Invia richiesta</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <p>© 2026 Gold Advisor – Lugano, Svizzera</p>
-  </div>
-</footer>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
