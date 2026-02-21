@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #000, #3a2f0b);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 14px 26px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #c9a24d;
+  color: #000;
+}
+
+.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #c9a24d;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-section form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
