@@ -320,6 +320,8 @@ a{color:inherit}
 
 .hero__card .card__kicker{ color: rgba(255,255,255,.78) !important; }
 .hero__card .card__text{ color: rgba(255,255,255,.75) !important; }
+}
+
 /* === HARD OVERRIDE FORM CARD === */
 .card.card--glass{
   background: linear-gradient(
