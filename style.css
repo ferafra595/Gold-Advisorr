@@ -426,6 +426,4 @@ a{color:inherit}
 .hero__card .card--glass{
   padding: 28px 26px 26px 26px !important;
 }
-.hero__card .card--glass{
-  outline: 6px solid red !important;
-}
+
