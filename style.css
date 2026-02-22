@@ -475,3 +475,10 @@ a{color:inherit}
   font-size:14px;
   line-height:1.6;          /* ✅ il testo non “tocca” i bordi */
 }
+
+/* FIX: Tagli sempre a 3 colonne su desktop */
+@media (min-width: 921px){
+  .section.section--alt .grid3{
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
