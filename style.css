@@ -452,7 +452,7 @@ a{color:inherit}
 }
 /* ===== TAGLI (card) - proporzioni pulite ===== */
 .grid3 .card.card--soft{
-  padding: 24px 24px 22px;  /* più aria interna */
+  padding: 26px 26px 24px;  /* più aria interna */
   min-height: 170px;        /* tutte uguali e più “piene” */
   border-radius: 20px;      /* più premium */
 }
