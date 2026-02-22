@@ -487,3 +487,35 @@ a{color:inherit}
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+/* ===== FIX TAGLI – MOBILE ===== */
+@media (max-width: 720px){
+
+  .grid3{
+    grid-template-columns: 1fr; /* una card per riga */
+    gap: 12px;
+  }
+
+  .grid3 .card,
+  .grid3 .card.card--soft{
+    min-height: auto !important; /* 🔥 QUESTO È FONDAMENTALE */
+    padding: 18px 18px 16px !important;
+    border-radius: 16px;
+  }
+
+  .card__title{
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .card__text{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .card__badge,
+  .feature__meta{
+    font-size: 13px;
+    margin-top: 6px;
+  }
+}
