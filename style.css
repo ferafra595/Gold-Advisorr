@@ -519,3 +519,27 @@ a{color:inherit}
     margin-top: 6px;
   }
 }
+/* ===== FIX CTA BOX – MOBILE ===== */
+@media (max-width: 720px){
+
+  .callout{
+    flex-direction: column;       /* testo sopra, bottone sotto */
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .callout__text{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .callout .btn,
+  .callout a{
+    width: 100%;                  /* bottone full width */
+    text-align: center;
+    padding: 12px 14px;           /* più basso */
+    font-size: 15px;
+    border-radius: 14px;
+  }
+}
