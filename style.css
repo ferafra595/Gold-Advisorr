@@ -451,52 +451,28 @@ a{color:inherit}
   .media__img img{height: 260px;}
   .lugano img{height: 240px;}
 }
-/* === TAGLI ORO – MIGLIORAMENTO CARD === */
+/* ===== TAGLI (card) - proporzioni pulite ===== */
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
 .feature{
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.feature:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 40px 90px rgba(0,0,0,.6);
-}
-
-.feature__title{
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.feature__text{
-  font-size: 14.5px;
-  line-height: 1.6;
-}
-
-.card__badge{
-  margin-top: 14px;
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255,255,255,.9);
-  background: rgba(201,162,77,.14);
-  border: 1px solid rgba(201,162,77,.35);
-}
-.feature{
-  padding: 26px 28px 30px;
+  padding: 24px 26px 26px;  /* ✅ più aria interna */
   border-radius: var(--radius);
   border:1px solid var(--line);
   background: rgba(255,255,255,.03);
 }
-.feature__text{
-  line-height: 1.6;
-  margin-bottom: 12px;
+
+.feature__title{
+  font-weight:700;
+  margin:0 0 10px;          /* ✅ separazione titolo/testo */
 }
 
-.feature__meta{
-  margin-top: auto; /* 🔑 questa è la chiave */
-  font-size: 13px;
-  font-weight: 600;
-  color: rgba(255,255,255,.85);
+.feature__text{
+  color:var(--muted);
+  margin:0;
+  font-size:14px;
+  line-height:1.6;          /* ✅ il testo non “tocca” i bordi */
 }
