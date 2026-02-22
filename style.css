@@ -459,10 +459,10 @@ a{color:inherit}
 }
 
 .feature{
-  padding: 24px 26px 26px;  /* ✅ più aria interna */
+  padding: 27px 29px 29px;  /* ✅ più aria interna */
   border-radius: var(--radius);
   border:1px solid var(--line);
-  background: rgba(255,255,255,.03);
+  background: rgba(270,270,270,.03);
 }
 
 .feature__title{
