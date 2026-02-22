@@ -162,6 +162,11 @@ a{color:inherit}
 .sub{margin:0;color:var(--muted);max-width:72ch}
 
 /* Grids */
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
 .grid3 .card.card--soft{
   padding: 26px 26px 24px;  /* più aria interna */
   min-height: 170px;        /* tutte uguali e più “piene” */
