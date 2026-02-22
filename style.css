@@ -469,3 +469,9 @@ a{color:inherit}
   background: rgba(201,162,77,.14);
   border: 1px solid rgba(201,162,77,.35);
 }
+.feature{
+  padding: 22px 22px 26px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+}
