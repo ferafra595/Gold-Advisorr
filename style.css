@@ -475,3 +475,14 @@ a{color:inherit}
   display: flex;
   flex-direction: column;
 }
+.feature__text{
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.feature__meta{
+  margin-top: auto; /* 🔑 questa è la chiave */
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,.85);
+}
