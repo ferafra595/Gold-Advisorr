@@ -437,3 +437,35 @@ a{color:inherit}
   .media__img img{height: 260px;}
   .lugano img{height: 240px;}
 }
+/* === TAGLI ORO – MIGLIORAMENTO CARD === */
+.feature{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.feature:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 40px 90px rgba(0,0,0,.6);
+}
+
+.feature__title{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature__text{
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.card__badge{
+  margin-top: 14px;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,.9);
+  background: rgba(201,162,77,.14);
+  border: 1px solid rgba(201,162,77,.35);
+}
