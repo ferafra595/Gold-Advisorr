@@ -547,21 +547,52 @@ a{color:inherit}
 
 .gold-price{
   padding:70px 0;
-  background:
-    radial-gradient(900px 400px at 50% 0%, rgba(201,162,77,.12), transparent 60%),
-    #060606;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
 
-.gold-price__head{
+.gold-price__box{
+  padding:30px;
+  border-radius:22px;
   text-align:center;
-  margin-bottom:28px;
 }
 
-.gold-price__widget{
-  border-radius:22px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  box-shadow: var(--shadow);
+.gold-price__row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.gold-price__label{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:6px;
+}
+
+.gold-price__value{
+  font-size:34px;
+  font-weight:700;
+  color:var(--gold);
+}
+
+.gold-price__meta{
+  font-size:12px;
+  color:rgba(255,255,255,.6);
+}
+
+.gold-price__note{
+  margin-top:18px;
+  font-size:12px;
+  color:rgba(255,255,255,.5);
+}
+
+@media (max-width: 720px){
+  .gold-price__row{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .gold-price__value{
+    font-size:28px;
+  }
 }
