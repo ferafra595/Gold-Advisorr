@@ -543,3 +543,25 @@ a{color:inherit}
     border-radius: 14px;
   }
 }
+/* ===== GOLD PRICE SECTION ===== */
+
+.gold-price{
+  padding:70px 0;
+  background:
+    radial-gradient(900px 400px at 50% 0%, rgba(201,162,77,.12), transparent 60%),
+    #060606;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.gold-price__head{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.gold-price__widget{
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+}
