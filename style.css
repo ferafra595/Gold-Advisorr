@@ -591,3 +591,65 @@ a{color:inherit}
     line-height: 1.15;
   }
 }
+/* ===== PREMIUM SELECT (form) ===== */
+.hero__card .form select{
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 100%;
+  padding: 14px 44px 14px 14px;       /* spazio a destra per freccia */
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(0,0,0,.22);
+  color: rgba(255,255,255,.92);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 10px 30px rgba(0,0,0,.25);
+
+  font-size: 14.5px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+/* Freccia custom (oro) */
+.hero__card .form label{
+  position: relative;
+}
+.hero__card .form label:has(select)::after{
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(8px);
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(201,162,77,.95);
+  border-bottom: 2px solid rgba(201,162,77,.95);
+  transform: translateY(6px) rotate(45deg);
+  pointer-events: none;
+  opacity: .95;
+}
+
+/* Focus "glow oro" */
+.hero__card .form select:focus{
+  outline: none;
+  border-color: rgba(201,162,77,.85);
+  box-shadow:
+    0 0 0 4px rgba(201,162,77,.16),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* Opzioni (alcuni browser le limitano, ma miglioriamo dove possibile) */
+.hero__card .form select option{
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* Mobile: più comodo da toccare */
+@media (max-width: 720px){
+  .hero__card .form select{
+    padding: 16px 46px 16px 14px;
+    font-size: 15px;
+  }
+}
